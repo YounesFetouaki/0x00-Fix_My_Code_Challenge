@@ -1,11 +1,10 @@
-#!/usr/bin/node
+#!/home/codespace/nvm/current/bin/node
 /*
     Print a square with the character #
     
     The size of the square must be the first argument 
     of the program.
 */
-
 
 if (process.argv.length <= 2) {
     process.stderr.write("Missing argument\n");
@@ -14,11 +13,11 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-size = parseInt(process.argv[2], 16)
+size = parseInt(process.argv[2], 10); /*Use base 10 for conversion*/
 
-for (let i = 0 ; i < size ; i ++) {
-    for (let j = 0 ; j < size ; j ++) {
+for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
         process.stdout.write("#");
     }
-    process.stdout.write("\n");
+    process.stdout.write("\n"); /* Add a newline character after each row*/
 }
