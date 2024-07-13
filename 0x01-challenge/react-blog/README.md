@@ -9,4 +9,3 @@ Simple React Blog
 3. Run `gulp build-all` to build the code.
 4. Run `gulp nodemon` to start the server.
 5. Go to http://localhost:5000/
-
